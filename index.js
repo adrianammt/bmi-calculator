@@ -10,7 +10,7 @@ formElement.addEventListener("submit", (event) => {
 
   text.textContent = `Your body mass index is + ${bmi.toFixed(2)}`;
 
-  if (bmi < 18.5 && bmi >= 30) {
+  if (bmi < 18.5 || bmi >= 30) {
     text.style.color = "red";
   } else if (bmi >= 18.5 && bmi < 25) {
     text.style.color = "green";
